@@ -1,0 +1,18 @@
+{
+    "id": "nodebb-plugin-telegram-bot",
+    "name": "NodeBB Telegram Bot",
+    "description": "A Telegram bot for NodeBB",
+    "url": "https://github.com/Zhubeibros/nodebb-telegram-bot",
+    "library": "./library.js",
+    "hooks": [
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:admin.header.build", "method": "addAdminNavigation" }
+    ],
+    "staticDirs": {
+        "static": "./static"
+    },
+    "templates": "./static/templates",
+    "scripts": [
+        "public/js/admin.js"
+    ]
+}

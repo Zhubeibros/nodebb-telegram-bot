@@ -1,17 +1,22 @@
 {
-  "name": "nodebb-telegram-bot",
+  "name": "nodebb-plugin-telegram-bot",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A Telegram bot plugin for NodeBB",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhubeibros/nodebb-telegram-bot.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "telegram",
+    "bot"
+  ],
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.61.0"
+  },
+  "nbbpm": {
+    "compatibility": "^3.0.0"
   }
 }
